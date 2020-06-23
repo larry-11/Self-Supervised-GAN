@@ -185,8 +185,12 @@ def fid_inception_v3():
     inception.Mixed_7b = FIDInceptionE_1(1280)
     inception.Mixed_7c = FIDInceptionE_2(2048)
 
+    # download the FID_WEIGHT:
     state_dict = load_state_dict_from_url(FID_WEIGHTS_URL, progress=True)
-    inception = torch.load('./pt_inception.pth')
+    inception.load_state_dict(state_dict)
+
+    # if you already download the FID_WEIGHT and put in ./utils:
+    # inception.load_state_dict(torch.load('./utils/pt_inception.pth'))
     return inception
 
 
