@@ -3,7 +3,7 @@ A pytorch implementation of "Self-Supervised GANs via Auxiliary Rotation Loss"
 
 ## Method
 
-![](https://github.com/larry-11/Self-Supervised-GAN/tree/master/img/0.png)
+![](https://github.com/larry-11/Self-Supervised-GAN/blob/master/img/0.png)
 
 Paper:
 
@@ -63,4 +63,4 @@ CUDA_VISIBLE_DEVICES=0 python main.py  --model SSLGAN_SN \
 | **D1**      | **SNGAN** | **hinge** | **2e-4** | **1**      |          |
 | **D2**      | **SNGAN** | **hinge** | **2e-4** | **1**      | √        |
 
-![](https://github.com/larry-11/Self-Supervised-GAN/tree/master/img/1.png)
+![](https://github.com/larry-11/Self-Supervised-GAN/blob/master/img/1.png)
